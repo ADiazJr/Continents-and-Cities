@@ -1,10 +1,15 @@
 //This application will print a continent and the largest city in that continent
 
+import java.util.Scanner;
+
 public class Continents {
 
     public static void main(String[] args) {
-      int continent = 4;
-      
+      Scanner coninentInt = new Scanner(System.in);
+      System.out.println("Enter Number from 1-7");
+      int continent = coninentInt.nextInt();
+      coninentInt.close();
+
       switch(continent) {
         case 1:
         System.out.println("North America: Mexico City, Mexico");
